@@ -1,7 +1,7 @@
 @import "compass/utilities";
 
 // main fixed width
-$content-width : 1100px;
+$container-width : 1100px;
 
 // number of columns
 $column-count : 12;
@@ -10,12 +10,12 @@ $column-count : 12;
 $gutter-width: 1%;
 
 .container {
-	width: $content-width;
+	width: $container-width;
 }
 
 @for $i from 1 through $column-count {
 	.column-#{$i} {
-		width: (100% * ($i / $column-count)) - $gutter-width;
+		width: (((100 + $gutter-width) / $column-count) * $i) - $gutter-width;
 	}
 }
 
@@ -30,5 +30,12 @@ $gutter-width: 1%;
 
 	&:first-child {
 		margin-left: 0;
+	}
+}
+
+@media only screen and (max-width: $container-width) {
+	[class*="column"] {
+		width: 100%;
+		margin: 0;
 	}
 }
