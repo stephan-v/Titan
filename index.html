@@ -5,15 +5,20 @@
 	<link rel="stylesheet" href="css/main.css">
 	<title>Grid</title>
 	<style>
-	/*-- Preview Styles DELETE FOR USE--*/
+		/*-- Preview Styles DELETE FOR USE--*/
+		html {
+			font: 0.8em/1.5 sans-serif;
+			color: #444;
+		}
 		h1 {
 			text-align: center;
+			font-size: 4.5em;
 		}
-		p {
+		.row p {
 			color: #FFF;
 		}
 		[class*="column"] {
-			background: #41576D;
+			background: #f43059;
 			margin-bottom: 15px;
 			text-align: center;
 		}
@@ -21,48 +26,50 @@
 </head>
 <body>
 	<div class="container">
-		<h1>Responsive Fluid Grid</h1>
+		<h1>responsive fluid grid</h1>
+		<p>The grid below shows a combination of nested, gutterless, reversed, centered, responsive grids, all using classes in the HTML. Each integer represents the high-level grid item you are looking at, and each decimal represents the grid item’s level of nesting (if any), e.g. Grid 5.3 represents the third nested grid inside of the fifth major grid.</p>
+
 		<div class="row">
 			<div class="column-12">
-				<p>column-12</p>
+				<p>.column-12</p>
 			</div>
 		</div><!-- .row -->
 		<div class="row">
 			<div class="column-11">
-				<p>column-11</p>
+				<p>.column-11</p>
 			</div>
 			<div class="column-1">
-				<p>column-1</p>
+				<p>.column-1</p>
 			</div>
 		</div><!-- .row -->
 		<div class="row">
 			<div class="column-10">
-				<p>column-10</p>
+				<p>.column-10</p>
 			</div>
 			<div class="column-2">
-				<p>column-2</p>
+				<p>.column-2</p>
 			</div>
 		</div><!-- .row -->
 		<div class="row">
 			<div class="column-9">
-				<p>column-9</p>
+				<p>.column-9</p>
 			</div>
 			<div class="column-3">
-				<p>column-3</p>
+				<p>.column-3</p>
 			</div>
 		</div><!-- .row -->
 		<div class="row">
 			<div class="column-3">
-				<p>column-3</p>
+				<p>.column-3</p>
 			</div>
 			<div class="column-3">
-				<p>column-3</p>
+				<p>.column-3</p>
 			</div>
 			<div class="column-3">
-				<p>column-3</p>
+				<p>.column-3</p>
 			</div>
 			<div class="column-3">
-				<p>column-3</p>
+				<p>.column-3</p>
 			</div>
 		</div><!-- .row -->
 	</div><!-- .container -->
