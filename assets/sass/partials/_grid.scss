@@ -14,6 +14,7 @@ $gutter-width: 1%;
 
 .container {
 	width: $container-width;
+	margin: 0 auto;
 }
 
 @for $i from 1 through $column-count {
@@ -41,10 +42,13 @@ $gutter-width: 1%;
 
 @media only screen and (max-width: $container-width) {
 	.container {
-		width: 100%;
+		// By setting the width to 90% it will give the document padding.
+		width: 90%;
 	}
 	[class*="column"] {
 		width: 100%;
 		margin: 0;
 	}
+	// display responsive menu
+	@import "mobilemenu.scss";
 }

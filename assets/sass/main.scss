@@ -1,3 +1,38 @@
-@import "partials/grid.scss";
+// Compass reset
+@import "compass/reset";
 
-// The grid is imported, input your custom scss here.
+/*  #General styling
+================================================== */
+
+// responsive images
+img {
+	max-with: 100%;
+}
+
+/*  #Default menu styling
+================================================== */
+
+.navigation-menu {
+	ul {
+		padding: 2em 0 0 0;
+		float: right;
+		li {
+			margin-left: 30px;
+			float: left;
+			list-style-type: none;
+			a {
+				text-decoration: none;
+				color: #000;
+				display: block;
+			}
+		}
+	}
+}
+
+// hide the responsive menu button when in full width.
+.navigation-toggle {
+	display: none;
+}
+
+// The grid is important last so that the media queries override default styling
+@import "partials/grid.scss";
