@@ -1,12 +1,15 @@
 @import "compass";
 
-// main fixed width
+/*  #Main grid variables
+================================================== */
+
+// main container width in pixels
 $container-width : 1100px;
 
-// number of columns
+// total number of columns
 $column-count : 12;
 
-// gutter width
+// spacing between the columns
 $gutter-width: 1%;
 
 .container {
@@ -32,6 +35,9 @@ $gutter-width: 1%;
 		margin-left: 0;
 	}
 }
+
+/*  #Media queries
+================================================== */
 
 @media only screen and (max-width: $container-width) {
 	.container {
