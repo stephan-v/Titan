@@ -1,4 +1,10 @@
-# Ignore the sass and .sass-cache directory.
+# General ignore file
 
-assets/sass
+#cached sass partials are only usefull for development
 .sass-cache
+
+#node modules can be installed locally by using npm install
+node_modules
+
+#dev files contains all development build files
+dev

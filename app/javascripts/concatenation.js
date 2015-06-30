@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".navigation-toggle").click(function(){$(".navigation-menu ul").slideToggle(),$(this).toggleClass("close")})}),$(window).resize(function(){var n=$(window).width();n>1100&&$(".navigation-menu ul").show()});
